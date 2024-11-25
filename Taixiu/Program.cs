@@ -7,7 +7,7 @@ internal class Taixiu
         Console.Write("Chao mung ban toi tro choi tai xiu cua chung toi" + Environment.NewLine + "Tai khoan ban con la 1000$ " + Environment.NewLine + "Mot van thang ban duoc 100$ con thua thi mat 100$");
         gameplay();
     }
-    public static int tungxucsat()
+    public static int tungxucxac()
     {
         Random rnd = new Random();
         int lan1 = rnd.Next(6) + 1;
@@ -29,7 +29,7 @@ internal class Taixiu
             }
             Console.Write(Environment.NewLine + "Chon Tai Hay Xiu<T/X>:");
             string lua_chon = Console.ReadLine();
-            int luot_quay = tungxucsat();
+            int luot_quay = tungxucxac();
             if (lua_chon.ToUpper() == "T")
             {
                 if (luot_quay >= 10)
